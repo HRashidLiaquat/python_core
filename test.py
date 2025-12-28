@@ -72,3 +72,30 @@ print("Exponentiation:", exp_result)
 floor_div_result = a // b
 print("Floor Division:", floor_div_result)
 
+#Relational Operators
+#Relational operators are used to compare two values.
+
+a = 2
+b = 10
+print("a == b:", a == b) # False
+print("a != b:", a != b) # True   
+print("a > b:", a > b) # False
+print("a < b:", a < b) # True   
+print("a >= b:", a >= b) # False
+print("a <= b:", a <= b) # True
+#Logical Operators
+#Logical operators are used to combine conditional statements.
+x = 5
+print("x > 3 and x < 10:", x > 3 and x < 10) # True
+print("x > 3 or x < 4:", x > 3 or x < 4) # True
+print("not(x > 3 and x < 10):", not(x > 3 and x < 10)) # False
+
+x1 = 1;
+y1 = 2;
+
+print(x1==1 and y1!=2) # False
+print(x1==1 or y1!=2)  # True
+print(x1!=1 or y1==2)  # True
+print(not(x1==1 and y1==2)) # False
+print(not(x1==1 or y1!=2))  # False
+
