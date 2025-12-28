@@ -53,3 +53,22 @@ print("Data5 Dictionary:", data5)
 
 type(data5)
 print("Data5 Type:", type(data5))
+
+#Operators
+a = 10
+b = 5
+sum_result = a + b
+print("Sum:", sum_result)
+diff_result = a - b
+print("Difference:", diff_result)
+prod_result = a * b
+print("Product:", prod_result)
+div_result = a / b
+print("Division:", div_result)
+mod_result = a % b
+print("Modulus:", mod_result)
+exp_result = a ** b
+print("Exponentiation:", exp_result)
+floor_div_result = a // b
+print("Floor Division:", floor_div_result)
+
