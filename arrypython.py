@@ -123,22 +123,28 @@ import numpy as np
 
 
 
-m = int(input("Enter number of row:"))
-n = int(input("Enter Numbers of columns:"))
+# m = int(input("Enter number of row:"))
+# n = int(input("Enter Numbers of columns:"))
 
-a = zeros((m,n), dtype=int)
-u = len(a)
+# a = zeros((m,n), dtype=int)
+# u = len(a)
+# print(a)
+# for i in range(u):
+#     for j in range(len(a[i])):
+#         x = int(input("Enter Element: "))
+#         a[i][j] = x
+# for i in range(u):
+#     for j in range(len(a[i])):
+#         print(a[i][j])
+
+
+n = array([[10, 20, 30],
+        [40,50,60],
+        [70, 80, 90]])
+print("Original Array:")
+
+a = n[0:2, 1:4]
 print(a)
-for i in range(u):
-    for j in range(len(a[i])):
-        x = int(input("Enter Element: "))
-        a[i][j] = x
-for i in range(u):
-    for j in range(len(a[i])):
-        print(a[i][j])
-
-
-
 
 
 
