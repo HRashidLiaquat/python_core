@@ -138,13 +138,28 @@ import numpy as np
 #         print(a[i][j])
 
 
-n = array([[10, 20, 30],
-        [40,50,60],
-        [70, 80, 90]])
-print("Original Array:")
+# n = array([[10, 20, 30],
+#         [40,50,60],
+#         [70, 80, 90]])
+# print("Original Array:")
 
-a = n[0:2, 1:4]
-print(a)
+# a = n[0:2, 1:4]
+# print(a)
+
+
+
+#Python funcation
+def disp():
+    name = "Rashid Liaquat"
+    print("Become a AI/ML Export in 2026 IA", name)
+
+
+disp()
+
+# def add():
+#     a = input("Enter a first number:")
+#     b = input()
+
 
 
 
