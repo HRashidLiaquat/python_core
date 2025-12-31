@@ -156,40 +156,50 @@ import numpy as np
 
 # disp()
 
-def add():
-    a = int(input("Enter a first number:"))
-    b = int(input("Enter the second number:"))
-    result = a + b
-    print("Total sum:", result)
-add()
+# def add():
+#     a = int(input("Enter a first number:"))
+#     b = int(input("Enter the second number:"))
+#     result = a + b
+#     print("Total sum:", result)
+# add()
 
-def sub():
-    a = int(input("Enter a first number:"))
-    b = int(input("Enter the second number:"))
-    result = a - b
-    print("Total sub:", result)
-sub()
+# def sub():
+#     a = int(input("Enter a first number:"))
+#     b = int(input("Enter the second number:"))
+#     result = a - b
+#     print("Total sub:", result)
+# sub()
 
-def dev():
-    a = int(input("Enter a first number:"))
-    b = int(input("Enter the second number:"))
-    result = a/b
-    print("Total dev:", result)
-dev()
+# def dev():
+#     a = int(input("Enter a first number:"))
+#     b = int(input("Enter the second number:"))
+#     result = a/b
+#     print("Total dev:", result)
+# dev()
 
-def modlus():
-    a = int(input("Enter a first number:"))
-    b = int(input("Enter the second number:"))
-    result = a%b
-    print("Total modolass:", result)
-modlus()
+# def modlus():
+#     a = int(input("Enter a first number:"))
+#     b = int(input("Enter the second number:"))
+#     result = a%b
+#     print("Total modolass:", result)
+# modlus()
 
-def sequreroot():
-    a = int(input("Enter a first number:"))
-    b = int(input("Enter the second number:"))
-    result = a**b
-    print("Total sequre root:", result)
-sequreroot()
+# def sequreroot():
+#     a = int(input("Enter a first number:"))
+#     b = int(input("Enter the second number:"))
+#     result = a**b
+#     print("Total sequre root:", result)
+# sequreroot()
+def add(y):
+    x= int(input("Enter the x values"))
+    c = x + y
+    d = x - y
+    return c, d
+sum,sub = add(20)
+print(sub)
+print(sum)
+
+
 
 
 
