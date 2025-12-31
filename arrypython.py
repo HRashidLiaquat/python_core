@@ -149,16 +149,47 @@ import numpy as np
 
 
 #Python funcation
-def disp():
-    name = "Rashid Liaquat"
-    print("Become a AI/ML Export in 2026 IA", name)
+# def disp():
+#     name = "Rashid Liaquat"
+#     print("Become a AI/ML Export in 2026 IA", name)
 
 
-disp()
+# disp()
 
-# def add():
-#     a = input("Enter a first number:")
-#     b = input()
+def add():
+    a = int(input("Enter a first number:"))
+    b = int(input("Enter the second number:"))
+    result = a + b
+    print("Total sum:", result)
+add()
+
+def sub():
+    a = int(input("Enter a first number:"))
+    b = int(input("Enter the second number:"))
+    result = a - b
+    print("Total sub:", result)
+sub()
+
+def dev():
+    a = int(input("Enter a first number:"))
+    b = int(input("Enter the second number:"))
+    result = a/b
+    print("Total dev:", result)
+dev()
+
+def modlus():
+    a = int(input("Enter a first number:"))
+    b = int(input("Enter the second number:"))
+    result = a%b
+    print("Total modolass:", result)
+modlus()
+
+def sequreroot():
+    a = int(input("Enter a first number:"))
+    b = int(input("Enter the second number:"))
+    result = a**b
+    print("Total sequre root:", result)
+sequreroot()
 
 
 
