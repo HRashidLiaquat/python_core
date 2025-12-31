@@ -190,14 +190,16 @@ import numpy as np
 #     result = a**b
 #     print("Total sequre root:", result)
 # sequreroot()
-def add(y):
-    x= int(input("Enter the x values"))
-    c = x + y
-    d = x - y
-    return c, d
-sum,sub = add(20)
-print(sub)
-print(sum)
+# def add(y):
+#     x= int(input("Enter the x values"))
+#     c = x + y
+#     d = x - y
+#     return c, d
+# sum,sub = add(20)
+# print(sub)
+# print(sum)
+
+
 
 
 
