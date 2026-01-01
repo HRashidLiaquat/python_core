@@ -56,8 +56,39 @@
 
 
 #Single Inheritance 
+# class Father:
+#     money = 1000
+#     def show(self):
+#         print("Parent class Instance Method")
+
+#     @classmethod
+
+#     def showmoney(cls):
+#         print("Parent class class Method:", cls.money)
+
+#     @staticmethod
+#     def stat():
+#         a = 10
+#         print("Parent class Static Method: ", a)
+# class Son(Father):
+#     def disp(self):
+#         print("Child class Instance Method")
+
+# s = Son()
+# s.disp()
+# s.show()
+# s.showmoney()
+# s.stat()
+# s.show()
+
+
+
+#Single Inheritance 
 class Father:
-    money = 1000
+    def __init__(self):
+        self.money = 10000
+        print("Father class Constructor")
+
     def show(self):
         print("Parent class Instance Method")
 
@@ -66,18 +97,14 @@ class Father:
     def showmoney(cls):
         print("Parent class class Method:", cls.money)
 
-    @staticmethod
-    def stat():
-        a = 10
-        print("Parent class Static Method: ", a)
 class Son(Father):
+    def __init__(self):
+        super().__init__()
+        print("Son Class Constructor")
+
     def disp(self):
-        print("Child class Instance Method")
+        print("Child class Instance Method", self.money)
 
 s = Son()
 s.disp()
-s.show()
-s.showmoney()
-s.stat()
-s.show()
 
