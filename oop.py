@@ -111,24 +111,38 @@
 
 
 
-class Father:
-    def __init__(self):
-        super().__init__()  
-        print("Father Class Constructor")
-    def showF(self):
-        print("Father class Method")
-class Mother:
-    def __init__(self):
-        super().__init__()  
-        print("Mother class Constructor")
-    def showM(self):
-        print("Mother class Method")
-class son(Father, Mother):
-    def __init__(self):
-        print("son calss Constructor")
-        super().__init__()   
-    def showS():
-        print("Son class Method")
-s = son()
+# class Father:
+#     def __init__(self):
+#         super().__init__()  
+#         print("Father Class Constructor")
+#     def showF(self):
+#         print("Father class Method")
+# class Mother:
+#     def __init__(self):
+#         super().__init__()  
+#         print("Mother class Constructor")
+#     def showM(self):
+#         print("Mother class Method")
+# class son(Father, Mother):
+#     def __init__(self):
+#         print("son calss Constructor")
+#         super().__init__()   
+#     def showS():
+#         print("Son class Method")
+# s = son()
+
+#Method Overloading
+
+class Myclass:
+    def sum(self, a=None, b=None, c=None):
+        if a!=None and b!= None and c!= None:
+            s= a + b + c
+        elif a!= None and b!= None:
+            s= a + b
+        else:
+            s = "Provide at least Two Numbers"
+        return s
+obj = Myclass()
+print(obj.sum(10,20,20))
 
 
