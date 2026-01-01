@@ -84,27 +84,51 @@
 
 
 #Single Inheritance 
+# class Father:
+#     def __init__(self):
+#         self.money = 10000
+#         print("Father class Constructor")
+
+#     def show(self):
+#         print("Parent class Instance Method")
+
+#     @classmethod
+
+#     def showmoney(cls):
+#         print("Parent class class Method:", cls.money)
+
+# class Son(Father):
+#     def __init__(self):
+#         super().__init__()
+#         print("Son Class Constructor")
+
+#     def disp(self):
+#         print("Child class Instance Method", self.money)
+
+# s = Son()
+# s.disp()
+
+
+
+
 class Father:
     def __init__(self):
-        self.money = 10000
-        print("Father class Constructor")
-
-    def show(self):
-        print("Parent class Instance Method")
-
-    @classmethod
-
-    def showmoney(cls):
-        print("Parent class class Method:", cls.money)
-
-class Son(Father):
+        super().__init__()  
+        print("Father Class Constructor")
+    def showF(self):
+        print("Father class Method")
+class Mother:
     def __init__(self):
-        super().__init__()
-        print("Son Class Constructor")
+        super().__init__()  
+        print("Mother class Constructor")
+    def showM(self):
+        print("Mother class Method")
+class son(Father, Mother):
+    def __init__(self):
+        print("son calss Constructor")
+        super().__init__()   
+    def showS():
+        print("Son class Method")
+s = son()
 
-    def disp(self):
-        print("Child class Instance Method", self.money)
-
-s = Son()
-s.disp()
 
