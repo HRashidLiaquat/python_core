@@ -3,57 +3,59 @@
 # import Product.p_cat
 # import services.serviceses
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
 
-class Father(ABC):
+# class Father(ABC):
 
-    @abstractmethod
-    def create_product(self):
-        pass
-    def create_service(self):
-        print("Concreate Method")
+#     @abstractmethod
+#     def create_product(self):
+#         pass
+#     def create_service(self):
+#         print("Concreate Method")
 
-class child(Father):
-    def create_product(self):
-        print("Child Class")
-        print("Defining Abstract Method")
-c = child()
-c.create_product()
-c.create_service()
-
-
-class DefenceForce(ABC):
-
-    @abstractmethod
-    def area(self):
-        pass
-    def gun(self):
-        print("Gun = AK-47 Rifle")
-
-class Army(DefenceForce):
-    def area(self):
-        print("Area = Land")
-class Navy(DefenceForce):
-    def area(self):
-        print("Area = Sea")
-class AirForce(DefenceForce):
-    def area(self):
-        print("Area = Air")
+# class child(Father):
+#     def create_product(self):
+#         print("Child Class")
+#         print("Defining Abstract Method")
+# c = child()
+# c.create_product()
+# c.create_service()
 
 
-a = Army()
-a.area()
-a.gun()
+# class DefenceForce(ABC):
 
-print("-----")
-n = Navy()
-n.area()
-n.gun()
-print("-----")
-af = AirForce()
-af.area()
-af.gun()
+#     @abstractmethod
+#     def area(self):
+#         pass
+#     def gun(self):
+#         print("Gun = AK-47 Rifle")
+
+# class Army(DefenceForce):
+#     def area(self):
+#         print("Area = Land")
+# class Navy(DefenceForce):
+#     def area(self):
+#         print("Area = Sea")
+# class AirForce(DefenceForce):
+#     def area(self):
+#         print("Area = Air")
+
+
+# a = Army()
+# a.area()
+# a.gun()
+
+# print("-----")
+# n = Navy()
+# n.area()
+# n.gun()
+# print("-----")
+# af = AirForce()
+# af.area()
+# af.gun()
+
+
 
 
 
@@ -79,3 +81,11 @@ af.gun()
 # print(Product.p_cat.producat())
 # print(services.serviceses.servicess_addproducat())
 
+
+
+from statistics import mode
+
+
+f = open("sample.txt", mode="w")
+f.write("Hello How are you?")
+f.close()
