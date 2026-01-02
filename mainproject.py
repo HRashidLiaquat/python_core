@@ -87,5 +87,21 @@ from statistics import mode
 
 
 f = open("sample.txt", mode="w")
-f.write("Hello How are you?")
+f.write("Hello\n")
+f.write("How are you\n")
+f.write("I am fine")
 f.close()
+print("File written successfully")
+
+f = open("sample.txt", mode="r")
+data = f.read()
+print(data)
+f.close()
+
+print("-----Reading line by line-----")
+
+f = open("sample.txt", mode="rb")
+data = f.read()
+print(data)
+f.close()
+
